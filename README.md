@@ -22,8 +22,8 @@ This website is designed to match the beautiful layout and feel of Hometown Pres
 
 ### 3. **Classroom Stages Section**
 - Shows different age groups with icons
-- **Tiny Tigers** (4 weeks - 2 years)
-- **Ponies** (2 - 3 years)
+- **Tiny Tigers, Baby Bears, Peguins, Turtles** (4 weeks - 2 years)
+- **Ponies, Monkeys, Frogs** (2 - 3 years)
 - **Parrots** (4K Program)
 - **Zoo** (School Age 5 - 12 years)
 
