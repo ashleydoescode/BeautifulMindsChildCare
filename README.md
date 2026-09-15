@@ -2,7 +2,7 @@
 
 ## 🎨 Design Inspiration: Hometown Preschool Layout
 
-This website is designed to match the beautiful layout and feel of Hometown Preschool while featuring Beautiful Minds Child Care's unique branding and information.
+This website is designed to match the layout and feel of Hometown Preschool while featuring Beautiful Minds Child Care's unique branding and information.
 
 ## 📐 Website Sections
 
@@ -94,7 +94,7 @@ Edit the staff cards with actual staff names and information.
 
 ### Update Contact Info
 Replace:
-- 2821 Fairfax Street, Eau Claire, WI 54703
+- 2821 Fairfax Street, Eau Claire, WI 54701
 - (715) 834-4360
 - admin@bmindscc.com
 
