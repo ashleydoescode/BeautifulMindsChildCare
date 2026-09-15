@@ -7,6 +7,7 @@
     --primary-purple: #6f3683;
     --magenta: #d1198d;
     --teal: #52acc5;
+    --accent-green: #82c142;
     --dark-bg: #3a3a3a;
     
     /* Supporting Colors */
@@ -224,7 +225,7 @@ body {
 .highlight-text {
     font-size: 1.2rem;
     font-weight: 600;
-    color: var(--teal);
+    color: var(--accent-green);
     margin-bottom: 1rem;
 }
 
@@ -269,7 +270,7 @@ body {
 }
 
 .stage-intro h3 {
-    color: var(--magenta);
+    color: var(--accent-green);
     font-size: 1rem;
     margin-bottom: 0.5rem;
     font-weight: 400;
@@ -296,6 +297,7 @@ body {
     text-align: center;
     box-shadow: var(--box-shadow);
     transition: var(--transition);
+    border-top: 4px solid var(--accent-green);
 }
 
 .stage-card:hover {
@@ -305,7 +307,7 @@ body {
 
 .stage-icon {
     font-size: 3rem;
-    color: var(--magenta);
+    color: var(--accent-green);
     margin-bottom: 1rem;
 }
 
@@ -440,7 +442,7 @@ body {
     right: 20px;
     width: 30px;
     height: 30px;
-    background: var(--magenta);
+    background: var(--accent-green);
     border-radius: 50%;
 }
 
@@ -731,7 +733,7 @@ body {
 
 .footer-section h4 {
     margin-bottom: 1rem;
-    color: var(--teal);
+    color: var(--accent-green);
 }
 
 .footer-section ul {
@@ -749,7 +751,7 @@ body {
 }
 
 .footer-section a:hover {
-    color: var(--teal);
+    color: var(--accent-green);
 }
 
 .footer-section p {
