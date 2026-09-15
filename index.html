@@ -1,0 +1,328 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Beautiful Minds Child Care - A Beautiful Mind Grows Here. Quality child care in Eau Claire, Wisconsin">
+    <title>Beautiful Minds Child Care - Eau Claire, WI</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <!-- Navigation Header -->
+    <header class="navbar">
+        <div class="container">
+            <div class="nav-wrapper">
+                <div class="logo-section">
+                    <img src="logo.png" alt="Beautiful Minds Child Care Logo" class="logo-img">
+                    <div class="logo-text">
+                        <h1>Beautiful Minds</h1>
+                        <p class="tagline">Child Care Center</p>
+                    </div>
+                </div>
+                <nav class="nav-menu">
+                    <ul>
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#programs">Programs</a></li>
+                        <li><a href="#about">About</a></li>
+                        <li><a href="#team">Our Team</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                    </ul>
+                </nav>
+                <button class="hamburger" onclick="toggleMenu()">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section with Wavy Design -->
+    <section id="home" class="hero">
+        <div class="hero-top-wave"></div>
+        
+        <div class="hero-content">
+            <div class="hero-left">
+                <img src="assets/hero-image.jpg" alt="Children at Beautiful Minds" class="hero-image">
+            </div>
+            <div class="hero-right">
+                <div class="hero-box">
+                    <h2>A Place for All Children to Feel Included</h2>
+                    <p class="highlight-text">Serving Eau Claire families since 2012</p>
+                    <p class="hero-description">Every child is seen, loved, celebrated, and valued.</p>
+                    <a href="#contact" class="cta-button">Schedule a Tour</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="hero-bottom-wave"></div>
+    </section>
+
+    <!-- Classroom Stages Section -->
+    <section id="programs" class="classroom-stages">
+        <div class="container">
+            <div class="stage-intro">
+                <h3>Have the text be this color? Or let the pink?</h3>
+                <h2>A Classroom for Every Stage</h2>
+            </div>
+
+            <div class="stages-grid">
+                <div class="stage-card">
+                    <div class="stage-icon">
+                        <i class="fas fa-paw"></i>
+                    </div>
+                    <h3>Tiny Tigers</h3>
+                    <p>4 weeks - 2 years</p>
+                </div>
+
+                <div class="stage-card">
+                    <div class="stage-icon">
+                        <i class="fas fa-horse"></i>
+                    </div>
+                    <h3>Ponies</h3>
+                    <p>2 - 3 years</p>
+                </div>
+
+                <div class="stage-card">
+                    <div class="stage-icon">
+                        <i class="fas fa-feather"></i>
+                    </div>
+                    <h3>Parrots</h3>
+                    <p>4K Program</p>
+                </div>
+
+                <div class="stage-card">
+                    <div class="stage-icon">
+                        <i class="fas fa-paw"></i>
+                    </div>
+                    <h3>Zoo</h3>
+                    <p>School Age 5 - 12 yrs</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- More Than Childcare Section -->
+    <section id="about" class="family-section">
+        <div class="family-wave-top"></div>
+        
+        <div class="container">
+            <div class="family-content">
+                <div class="family-box">
+                    <h2>More Than Childcare – It's Family</h2>
+                    
+                    <div class="family-values">
+                        <div class="value-item">
+                            <h4>Relationships First</h4>
+                            <p>Trust and connection are the foundation for learning.</p>
+                        </div>
+
+                        <div class="value-item">
+                            <h4>Every Child is Unique</h4>
+                            <p>Honoring each child's individual strengths and developmental pace.</p>
+                        </div>
+
+                        <div class="value-item">
+                            <h4>Partners with Families</h4>
+                            <p>Collaborating with parents to create the best environment for growth.</p>
+                        </div>
+
+                        <div class="value-item">
+                            <h4>Joyful Learning</h4>
+                            <p>Play-based curriculum that fosters wonder and discovery.</p>
+                        </div>
+                    </div>
+
+                    <div class="award-badge">
+                        <i class="fas fa-star"></i>
+                        <p><strong>Award Winning</strong><br>Excellence in Early Childhood Care</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="family-wave-bottom"></div>
+    </section>
+
+    <!-- Call to Action Sections -->
+    <section class="dual-cta">
+        <div class="container">
+            <div class="cta-grid">
+                <div class="cta-card">
+                    <h3>Ready to See It for Yourself?</h3>
+                    <p>Schedule a tour and meet our team. We'd love to show you around.</p>
+                    <a href="#contact" class="cta-button primary">Schedule a Tour</a>
+                </div>
+
+                <div class="cta-card">
+                    <h3>Want to Join Our Team?</h3>
+                    <p>We're always looking for passionate, caring people to grow with us.</p>
+                    <a href="#contact" class="cta-button secondary">Apply Today</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Our Team Section -->
+    <section id="team" class="staff">
+        <div class="container">
+            <h2>Meet Our Team</h2>
+            <p class="section-intro">Our experienced and caring educators are the heart of Beautiful Minds. With 30+ dedicated staff members, each background-checked, licensed, and committed to your child's well-being.</p>
+            
+            <div class="staff-grid">
+                <div class="staff-card">
+                    <div class="staff-image">
+                        <i class="fas fa-user-circle"></i>
+                    </div>
+                    <h3>Tonya Bandoli</h3>
+                    <p class="position">Center Director & Owner</p>
+                    <p class="bio">Dedicated leader with 14+ years of experience in early childhood education and center management. Passionate about creating a nurturing environment for every child.</p>
+                </div>
+
+                <div class="staff-card">
+                    <div class="staff-image">
+                        <i class="fas fa-user-circle"></i>
+                    </div>
+                    <h3>Lead Educators</h3>
+                    <p class="position">Infant & Toddler Specialists</p>
+                    <p class="bio">Certified early childhood educators with expertise in responsive care, developmental milestones, and creating secure attachments.</p>
+                </div>
+
+                <div class="staff-card">
+                    <div class="staff-image">
+                        <i class="fas fa-user-circle"></i>
+                    </div>
+                    <h3>Lead Educators</h3>
+                    <p class="position">Preschool & Pre-K Teachers</p>
+                    <p class="bio">Specialized in play-based learning, curriculum development, and preparing children for kindergarten success.</p>
+                </div>
+
+                <div class="staff-card">
+                    <div class="staff-image">
+                        <i class="fas fa-user-circle"></i>
+                    </div>
+                    <h3>Support Staff</h3>
+                    <p class="position">Classroom Assistants & Aides</p>
+                    <p class="bio">Caring team members dedicated to maintaining safe, clean, and engaging learning environments for all children.</p>
+                </div>
+            </div>
+
+            <p class="staff-note"><strong>All staff members are background-checked, trained in CPR/First Aid, and committed to ongoing professional development.</strong></p>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <h2>Get In Touch</h2>
+            
+            <div class="contact-wrapper">
+                <div class="contact-form">
+                    <h3>Send us a Message</h3>
+                    <form action="mailto:admin@bmindscc.com" method="POST" enctype="text/plain">
+                        <div class="form-group">
+                            <label for="name">Your Name <span class="required">*</span></label>
+                            <input type="text" id="name" name="name" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Your Email <span class="required">*</span></label>
+                            <input type="email" id="email" name="email" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="phone">Phone Number</label>
+                            <input type="tel" id="phone" name="phone">
+                        </div>
+                        <div class="form-group">
+                            <label for="message">Message <span class="required">*</span></label>
+                            <textarea id="message" name="message" rows="5" required></textarea>
+                        </div>
+                        <button type="submit" class="btn-submit">Send Message</button>
+                    </form>
+                </div>
+
+                <div class="contact-info">
+                    <h3>Contact Information</h3>
+                    
+                    <div class="info-item">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <div>
+                            <h4>Address</h4>
+                            <p>2821 Fairfax Street<br>Eau Claire, WI 54703</p>
+                        </div>
+                    </div>
+
+                    <div class="info-item">
+                        <i class="fas fa-phone"></i>
+                        <div>
+                            <h4>Phone</h4>
+                            <p><a href="tel:+17158344360">(715) 834-4360</a></p>
+                        </div>
+                    </div>
+
+                    <div class="info-item">
+                        <i class="fas fa-envelope"></i>
+                        <div>
+                            <h4>Email</h4>
+                            <p><a href="mailto:admin@bmindscc.com">admin@bmindscc.com</a></p>
+                        </div>
+                    </div>
+
+                    <div class="info-item">
+                        <i class="fas fa-clock"></i>
+                        <div>
+                            <h4>Hours</h4>
+                            <p>Monday - Friday: 6:00 AM - 6:00 PM<br>Saturday & Sunday: Closed</p>
+                        </div>
+                    </div>
+
+                    <div class="social-links">
+                        <h4>Follow Us</h4>
+                        <a href="#" class="social-icon" title="Facebook"><i class="fab fa-facebook"></i></a>
+                        <a href="#" class="social-icon" title="Instagram"><i class="fab fa-instagram"></i></a>
+                        <a href="#" class="social-icon" title="Twitter"><i class="fab fa-twitter"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">
+                    <img src="logo.png" alt="Beautiful Minds" class="footer-logo-img">
+                    <div>
+                        <h4>Beautiful Minds</h4>
+                        <p>Serving Eau Claire families since 2012 — where every child is seen, loved, celebrated, and valued.</p>
+                    </div>
+                </div>
+
+                <div class="footer-section">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#programs">Programs</a></li>
+                        <li><a href="#about">About Us</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-section">
+                    <h4>Contact</h4>
+                    <p>2821 Fairfax Street<br>Eau Claire, WI 54703</p>
+                    <p><a href="tel:+17158344360">(715) 834-4360</a></p>
+                    <p><a href="mailto:admin@bmindscc.com">admin@bmindscc.com</a></p>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <p>&copy; 2012-2026 Beautiful Minds Child Care. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
