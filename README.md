@@ -42,6 +42,7 @@ This website is designed to match the beautiful layout and feel of Hometown Pres
 
 ### 6. **Our Team Section**
 - Tonya Bandoli - Director & Owner
+- Ashley Matysik - Assistant Director
 - Lead Educators - Infant & Toddler
 - Lead Educators - Preschool & Pre-K
 - Support Staff
@@ -64,6 +65,7 @@ This website is designed to match the beautiful layout and feel of Hometown Pres
 Primary Purple:  #6f3683
 Magenta:         #d1198d
 Teal:            #52acc5
+Green:           #82c142
 Dark Gray:       #3a3a3a
 Light Gray:      #f8f9fa
 ```
