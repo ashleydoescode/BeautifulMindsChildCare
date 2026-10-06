@@ -291,8 +291,8 @@ body {
 }
 
 .stage-card {
-    background: linear-gradient(135deg, var(--primary-purple) 0%, var(--magenta) 100%);
-    color: var(--white);
+    background: var(--white);
+    color: var(--text-color);
     padding: 2rem;
     border-radius: var(--border-radius);
     text-align: center;
@@ -313,14 +313,14 @@ body {
 }
 
 .stage-card h3 {
-    color: var(--white);
+    color: var(--primary-purple);
     margin-bottom: 0.5rem;
     font-size: 1.3rem;
     font-weight: 700;
 }
 
 .stage-card p {
-    color: var(--white);
+    color: var(--text-color);
     font-size: 0.95rem;
 }
 
