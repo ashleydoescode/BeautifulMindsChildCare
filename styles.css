@@ -8,6 +8,7 @@
     --magenta: #d1198d;
     --teal: #52acc5;
     --accent-green: #82c142;
+    --accent-green-dark: #6d9b34;
     --dark-bg: #3a3a3a;
     
     /* Supporting Colors */
@@ -112,7 +113,7 @@ body {
 }
 
 .nav-menu a:hover {
-    color: var(--magenta);
+    color: var(--accent-green);
 }
 
 .nav-menu a::after {
@@ -122,7 +123,7 @@ body {
     left: 0;
     width: 0;
     height: 3px;
-    background: var(--magenta);
+    background: var(--accent-green);
     transition: width 0.3s ease;
 }
 
@@ -238,22 +239,23 @@ body {
 
 .cta-button {
     display: inline-block;
-    background: var(--teal);
+    background: linear-gradient(135deg, var(--accent-green) 0%, var(--accent-green-dark) 100%);
     color: var(--white);
     padding: 15px 40px;
     border-radius: 50px;
     text-decoration: none;
     font-weight: 600;
     transition: var(--transition);
-    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+    box-shadow: 0 6px 18px rgba(130, 193, 66, 0.35);
     border: none;
     cursor: pointer;
+    letter-spacing: 0.02em;
 }
 
 .cta-button:hover {
     transform: translateY(-3px);
-    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.3);
-    filter: brightness(0.96);
+    box-shadow: 0 10px 22px rgba(130, 193, 66, 0.42);
+    filter: brightness(0.98);
 }
 
 /* ========================
@@ -467,12 +469,10 @@ body {
     line-height: 1.6;
 }
 
-.cta-button.primary {
-    background: var(--accent-green);
-}
-
+.cta-button.primary,
 .cta-button.secondary {
-    background: var(--accent-green);
+    background: linear-gradient(135deg, var(--accent-green) 0%, var(--accent-green-dark) 100%);
+    box-shadow: 0 6px 18px rgba(130, 193, 66, 0.35);
 }
 
 /* ========================
@@ -689,17 +689,18 @@ body {
     height: 45px;
     align-items: center;
     justify-content: center;
-    background: linear-gradient(135deg, var(--primary-purple) 0%, var(--magenta) 100%);
+    background: linear-gradient(135deg, var(--accent-green) 0%, var(--accent-green-dark) 100%);
     color: var(--white);
     border-radius: 50%;
     text-decoration: none;
     margin-right: 1rem;
     transition: var(--transition);
+    box-shadow: 0 6px 18px rgba(130, 193, 66, 0.25);
 }
 
 .social-icon:hover {
     transform: translateY(-5px);
-    box-shadow: var(--box-shadow);
+    box-shadow: 0 8px 20px rgba(130, 193, 66, 0.32);
 }
 
 /* ========================
