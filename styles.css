@@ -57,6 +57,160 @@ h1, h2, h3, h4 {
 }
 
 /* ========================
+   DECORATIVE POLKA DOTS
+   ======================== */
+
+.polka-accent {
+    position: relative;
+}
+
+.polka-accent::before {
+    content: '';
+    position: absolute;
+    pointer-events: none;
+}
+
+/* Hero section polka dots */
+.hero::before {
+    content: '';
+    position: absolute;
+    width: 120px;
+    height: 120px;
+    background: radial-gradient(circle, var(--accent-green) 3px, transparent 3px);
+    background-size: 25px 25px;
+    top: 10%;
+    left: -30px;
+    opacity: 0.06;
+    z-index: 0;
+}
+
+.hero::after {
+    content: '';
+    position: absolute;
+    width: 100px;
+    height: 100px;
+    background: radial-gradient(circle, var(--magenta) 2.5px, transparent 2.5px);
+    background-size: 20px 20px;
+    bottom: 5%;
+    right: -20px;
+    opacity: 0.05;
+    z-index: 0;
+}
+
+.hero-right {
+    position: relative;
+    z-index: 1;
+}
+
+/* Classroom stages polka accent */
+.classroom-stages::before {
+    content: '';
+    position: absolute;
+    width: 140px;
+    height: 140px;
+    background: radial-gradient(circle, var(--teal) 2.5px, transparent 2.5px);
+    background-size: 22px 22px;
+    top: 20%;
+    right: -40px;
+    opacity: 0.04;
+    pointer-events: none;
+    z-index: 0;
+}
+
+.classroom-stages {
+    position: relative;
+}
+
+.stages-grid {
+    position: relative;
+    z-index: 1;
+}
+
+/* Family section polka accent */
+.family-section::before {
+    content: '';
+    position: absolute;
+    width: 150px;
+    height: 150px;
+    background: radial-gradient(circle, var(--primary-purple) 3px, transparent 3px);
+    background-size: 28px 28px;
+    top: -30px;
+    left: 10%;
+    opacity: 0.05;
+    pointer-events: none;
+    z-index: 0;
+}
+
+.family-section {
+    position: relative;
+}
+
+.family-section::after {
+    content: '';
+    position: absolute;
+    width: 120px;
+    height: 120px;
+    background: radial-gradient(circle, var(--accent-green) 2px, transparent 2px);
+    background-size: 24px 24px;
+    bottom: 10%;
+    right: -30px;
+    opacity: 0.06;
+    pointer-events: none;
+    z-index: 0;
+}
+
+.family-box {
+    position: relative;
+    z-index: 1;
+}
+
+/* Dual CTA section polka accent */
+.dual-cta::before {
+    content: '';
+    position: absolute;
+    width: 130px;
+    height: 130px;
+    background: radial-gradient(circle, var(--magenta) 2px, transparent 2px);
+    background-size: 26px 26px;
+    bottom: 15%;
+    left: -35px;
+    opacity: 0.05;
+    pointer-events: none;
+}
+
+.dual-cta {
+    position: relative;
+}
+
+.cta-grid {
+    position: relative;
+    z-index: 1;
+}
+
+/* Staff section polka accent */
+.staff::before {
+    content: '';
+    position: absolute;
+    width: 110px;
+    height: 110px;
+    background: radial-gradient(circle, var(--teal) 2px, transparent 2px);
+    background-size: 23px 23px;
+    top: 15%;
+    right: -25px;
+    opacity: 0.04;
+    pointer-events: none;
+}
+
+.staff {
+    position: relative;
+}
+
+.staff-grid {
+    position: relative;
+    z-index: 1;
+}
+
+/* ========================
    HEADER & NAVIGATION
    ======================== */
 
@@ -221,37 +375,42 @@ h1, h2, h3, h4 {
 .hero-right {
     display: flex;
     align-items: center;
+    position: relative;
+    z-index: 2;
 }
 
 .hero-box {
     background: linear-gradient(135deg, var(--primary-purple) 0%, var(--magenta) 100%);
     color: var(--white);
-    padding: 3rem;
+    padding: 3.5rem;
     border-radius: 24px;
     box-shadow: 0 18px 40px rgba(111, 54, 131, 0.2);
     border-left: 5px solid var(--accent-green);
+    width: 100%;
 }
 
 .hero-box h2 {
-    font-size: clamp(2rem, 4vw, 3rem);
+    font-size: clamp(2rem, 4vw, 3.2rem);
     margin-bottom: 1.25rem;
-    line-height: 1.2;
-    font-weight: 800;
+    line-height: 1.1;
+    font-weight: 900;
+    letter-spacing: -0.03em;
 }
 
 .highlight-text {
-    font-size: 1.2rem;
+    font-size: 1.15rem;
     font-weight: 700;
     color: var(--soft-green);
     margin-bottom: 1rem;
     letter-spacing: 0.02em;
+    opacity: 0.95;
 }
 
 .hero-description {
     font-size: 1.08rem;
-    line-height: 1.7;
+    line-height: 1.8;
     margin-bottom: 2rem;
-    opacity: 0.95;
+    opacity: 0.93;
 }
 
 .cta-button {
@@ -281,13 +440,16 @@ h1, h2, h3, h4 {
    ======================== */
 
 .classroom-stages {
-    padding: 90px 20px;
+    padding: 100px 20px;
     background-color: var(--light-color);
+    position: relative;
 }
 
 .stage-intro {
     text-align: center;
-    margin-bottom: 3rem;
+    margin-bottom: 3.5rem;
+    position: relative;
+    z-index: 1;
 }
 
 .stage-intro h3 {
@@ -300,9 +462,10 @@ h1, h2, h3, h4 {
 }
 
 .stage-intro h2 {
-    font-size: clamp(2rem, 4vw, 2.8rem);
+    font-size: clamp(2rem, 4vw, 3rem);
     color: var(--primary-purple);
-    font-weight: 800;
+    font-weight: 900;
+    letter-spacing: -0.03em;
 }
 
 .stages-grid {
@@ -316,10 +479,10 @@ h1, h2, h3, h4 {
 .stage-card {
     background: var(--white);
     color: var(--text-color);
-    padding: 2rem;
+    padding: 2.5rem 2rem;
     border-radius: var(--border-radius);
     text-align: center;
-    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.08);
     transition: var(--transition);
     border-top: 4px solid var(--accent-green);
     border: 1px solid rgba(111, 54, 131, 0.06);
@@ -354,7 +517,7 @@ h1, h2, h3, h4 {
 
 .family-section {
     background-color: var(--white);
-    padding: 70px 20px;
+    padding: 80px 20px;
     position: relative;
     overflow: hidden;
 }
@@ -382,39 +545,40 @@ h1, h2, h3, h4 {
 .family-box {
     background: linear-gradient(135deg, var(--teal) 0%, #40b5c5 100%);
     color: var(--white);
-    padding: 2.8rem;
+    padding: 3.5rem;
     border-radius: 24px;
     border: 8px solid var(--primary-purple);
     position: relative;
-    z-index: 1;
-    box-shadow: 0 18px 42px rgba(0, 0, 0, 0.12);
+    z-index: 2;
+    box-shadow: 0 20px 45px rgba(0, 0, 0, 0.13);
 }
 
 .family-box h2 {
-    font-size: clamp(2rem, 3vw, 2.6rem);
-    margin-bottom: 2rem;
+    font-size: clamp(2rem, 3vw, 2.8rem);
+    margin-bottom: 2.5rem;
     text-align: center;
-    line-height: 1.3;
-    font-weight: 800;
+    line-height: 1.2;
+    font-weight: 900;
+    letter-spacing: -0.02em;
 }
 
 .family-values {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-    gap: 1.5rem;
-    margin-bottom: 2rem;
+    gap: 2rem;
+    margin-bottom: 2.5rem;
 }
 
 .value-item h4 {
     font-size: 1.15rem;
-    margin-bottom: 0.5rem;
+    margin-bottom: 0.75rem;
     font-weight: 700;
 }
 
 .value-item p {
     font-size: 0.95rem;
     opacity: 0.95;
-    line-height: 1.6;
+    line-height: 1.7;
 }
 
 .award-badge {
@@ -440,8 +604,9 @@ h1, h2, h3, h4 {
    ======================== */
 
 .dual-cta {
-    padding: 80px 20px;
+    padding: 90px 20px;
     background-color: var(--light-color);
+    position: relative;
 }
 
 .cta-grid {
@@ -455,7 +620,7 @@ h1, h2, h3, h4 {
 .cta-card {
     background: linear-gradient(135deg, var(--teal) 0%, #40b5c5 100%);
     color: var(--white);
-    padding: 3rem;
+    padding: 3.5rem;
     border-radius: var(--border-radius);
     text-align: center;
     box-shadow: 0 12px 30px rgba(0, 0, 0, 0.12);
@@ -482,7 +647,7 @@ h1, h2, h3, h4 {
 
 .cta-card h3 {
     color: var(--white);
-    font-size: 1.6rem;
+    font-size: 1.7rem;
     margin-bottom: 1rem;
     font-weight: 800;
 }
@@ -490,7 +655,7 @@ h1, h2, h3, h4 {
 .cta-card p {
     color: var(--white);
     margin-bottom: 2rem;
-    line-height: 1.6;
+    line-height: 1.7;
 }
 
 .cta-button.primary,
@@ -504,41 +669,43 @@ h1, h2, h3, h4 {
    ======================== */
 
 .staff {
-    padding: 90px 20px;
+    padding: 100px 20px;
     background-color: var(--white);
+    position: relative;
 }
 
 .staff h2 {
     text-align: center;
-    font-size: clamp(2rem, 4vw, 2.8rem);
+    font-size: clamp(2rem, 4vw, 3rem);
     margin-bottom: 1rem;
     color: var(--primary-purple);
-    font-weight: 800;
+    font-weight: 900;
+    letter-spacing: -0.03em;
 }
 
 .section-intro {
     text-align: center;
     font-size: 1.1rem;
-    margin-bottom: 3rem;
+    margin-bottom: 3.5rem;
     color: var(--text-color);
     max-width: 700px;
     margin-left: auto;
     margin-right: auto;
-    line-height: 1.7;
+    line-height: 1.8;
 }
 
 .staff-grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-    gap: 2rem;
+    gap: 2.5rem;
 }
 
 .staff-card {
     background: var(--light-color);
-    padding: 2rem;
+    padding: 2.5rem 2rem;
     border-radius: var(--border-radius);
     text-align: center;
-    box-shadow: var(--box-shadow);
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.08);
     transition: var(--transition);
     border: 1px solid rgba(111, 54, 131, 0.05);
 }
@@ -550,7 +717,7 @@ h1, h2, h3, h4 {
 
 .staff-image {
     font-size: 4rem;
-    color: var(--magenta);
+    color: var(--accent-green);
     margin-bottom: 1rem;
 }
 
@@ -570,14 +737,15 @@ h1, h2, h3, h4 {
 .staff-card .bio {
     color: var(--text-color);
     font-size: 0.95rem;
-    line-height: 1.6;
+    line-height: 1.7;
 }
 
 .staff-note {
     text-align: center;
-    margin-top: 2rem;
+    margin-top: 2.5rem;
     color: var(--primary-purple);
     font-size: 0.95rem;
+    font-weight: 600;
 }
 
 /* ========================
@@ -585,16 +753,17 @@ h1, h2, h3, h4 {
    ======================== */
 
 .contact {
-    padding: 90px 20px;
+    padding: 100px 20px;
     background-color: var(--light-color);
 }
 
 .contact h2 {
     text-align: center;
-    font-size: clamp(2rem, 4vw, 2.8rem);
+    font-size: clamp(2rem, 4vw, 3rem);
     margin-bottom: 3rem;
     color: var(--primary-purple);
-    font-weight: 800;
+    font-weight: 900;
+    letter-spacing: -0.03em;
 }
 
 .contact-wrapper {
@@ -670,7 +839,7 @@ h1, h2, h3, h4 {
     background: var(--white);
     padding: 1.5rem;
     border-radius: var(--border-radius);
-    box-shadow: var(--box-shadow);
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.08);
     border-left: 4px solid var(--teal);
 }
 
