@@ -14,32 +14,71 @@
         }
 
         .family-box {
-            max-width: 900px;
+            max-width: 550px;
             margin: 0 auto;
-            padding: 2rem 1.75rem 1.5rem;
+            padding: 2.5rem 2rem;
+            display: flex;
+            flex-direction: column;
         }
 
         .family-box h2 {
-            font-size: clamp(1.8rem, 2.5vw, 2.4rem);
-            margin-bottom: 1.5rem;
+            font-size: 1.65rem;
+            font-weight: 700;
+            margin-bottom: 2rem;
+            line-height: 1.2;
+            white-space: nowrap;
+        }
+
+        .family-values-wrapper {
+            display: flex;
+            gap: 2rem;
+            align-items: flex-start;
+            flex: 1;
         }
 
         .family-values {
-            gap: 1.25rem;
-            margin-bottom: 1.25rem;
+            gap: 1.5rem;
+            flex: 1;
         }
 
-        .best-of-badge {
+        .value-item {
+            margin-bottom: 0;
+        }
+
+        .value-item h4 {
+            font-size: 1rem;
+            margin-bottom: 0.5rem;
+        }
+
+        .best-of-wrapper {
             display: flex;
             justify-content: center;
-            margin-top: 0.75rem;
+            align-items: center;
+            min-width: 140px;
         }
 
         .best-of-logo {
-            max-width: 165px;
+            max-width: 130px;
             width: 100%;
             height: auto;
-            filter: drop-shadow(0 10px 18px rgba(111, 54, 131, 0.18));
+            filter: drop-shadow(0 8px 16px rgba(111, 54, 131, 0.15));
+        }
+
+        @media (max-width: 768px) {
+            .family-box h2 {
+                white-space: normal;
+                font-size: 1.5rem;
+            }
+
+            .family-values-wrapper {
+                flex-direction: column;
+                gap: 1.5rem;
+            }
+
+            .best-of-wrapper {
+                justify-content: center;
+                min-width: auto;
+            }
         }
     </style>
 </head>
@@ -149,30 +188,32 @@
                 <div class="family-box">
                     <h2>More Than Childcare – A place where children grow in every way!</h2>
                     
-                    <div class="family-values">
-                        <div class="value-item">
-                            <h4>Relationships First</h4>
-                            <p>Building trust and strong connections create the fundation of our center. Our families and their needs come first. </p>
+                    <div class="family-values-wrapper">
+                        <div class="family-values">
+                            <div class="value-item">
+                                <h4>Relationships First</h4>
+                                <p>Building trust and strong connections create the fundation of our center. Our families and their needs come first. </p>
+                            </div>
+
+                            <div class="value-item">
+                                <h4>Every Child is Unique</h4>
+                                <p>Honoring each child's individual strengths and developmental pace.</p>
+                            </div>
+
+                            <div class="value-item">
+                                <h4>Partners with Families</h4>
+                                <p>Collaborating with parents to create the best environment for growth.</p>
+                            </div>
+
+                            <div class="value-item">
+                                <h4>Joyful Learning</h4>
+                                <p>Play-based curriculum that sparks joy, imagination, and social awareness.</p>
+                            </div>
                         </div>
 
-                        <div class="value-item">
-                            <h4>Every Child is Unique</h4>
-                            <p>Honoring each child's individual strengths and developmental pace.</p>
+                        <div class="best-of-wrapper">
+                            <img src="best_of_logo.png" alt="Best of logo" class="best-of-logo">
                         </div>
-
-                        <div class="value-item">
-                            <h4>Partners with Families</h4>
-                            <p>Collaborating with parents to create the best environment for growth.</p>
-                        </div>
-
-                        <div class="value-item">
-                            <h4>Joyful Learning</h4>
-                            <p>Play-based curriculum that sparks joy, imagination, and social awareness.</p>
-                        </div>
-                    </div>
-
-                    <div class="best-of-badge">
-                        <img src="best_of_logo.png" alt="Best of logo" class="best-of-logo">
                     </div>
                 </div>
             </div>
