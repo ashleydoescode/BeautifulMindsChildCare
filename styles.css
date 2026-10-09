@@ -131,7 +131,7 @@ h1, h2, h3, h4 {
     content: '';
     position: absolute;
     width: 200px;
-    height: 150px;
+    height: 200px;
     background: radial-gradient(circle, var(--primary-purple) 3px, transparent 3px);
     background-size: 28px 28px;
     top: -30px;
