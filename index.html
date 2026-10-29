@@ -246,7 +246,29 @@
         <div class="container">
             <h2>Meet Our Team</h2>
             <p class="section-intro">Our experienced and caring educators are the heart of Beautiful Minds. With strong dedicated staff members, each background-checked, licensed, and CPR certified! 
-    
+    <div class="dropdown-menu">
+    <button class="menu-btn">Meet the team!</button>
+    <div class="menu-content">
+        <a class="links" href="#">Director & Asisstant Director</a>
+        <a class="links" href="#">Lead Teachers</a>
+        <a class="links" href="#">Assistant Teachers</a>
+        .dropdown-menu {
+    position: relative;
+    display: inline-block;
+}
+
+.menu-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    z-index: 1;
+}
+
+.dropdown-menu:hover .menu-content {
+    display: block;
+}
+    </div>
+</div>
             </p>
         
 
