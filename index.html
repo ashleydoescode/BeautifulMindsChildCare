@@ -8,76 +8,78 @@
     <link rel="stylesheet" href="styles.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
     <style>
+        .family-section {
+            padding: 6rem 20px;
+            background: linear-gradient(135deg, #d1198d 0%, #52acc5 100%);
+            color: #fff;
+            position: relative;
+            overflow: hidden;
+        }
+
         .family-content {
-            display: flex;
-            justify-content: center;
-        }
-
-        .family-box {
-            max-width: 550px;
+            position: relative;
+            z-index: 1;
+            max-width: 1000px;
             margin: 0 auto;
-            padding: 2.5rem 2rem;
-            display: flex;
-            flex-direction: column;
+            text-align: center;
         }
 
-        .family-box h2 {
-            font-size: 1.65rem;
+        .family-eyebrow {
+            margin-bottom: 0.75rem;
+            font-size: 1rem;
             font-weight: 700;
-            margin-bottom: 2rem;
-            line-height: 1.2;
-            white-space: nowrap;
+            letter-spacing: 0.12em;
+            text-transform: uppercase;
+            color: #edf7d8;
         }
 
-        .family-values-wrapper {
-            display: flex;
-            gap: 2rem;
-            align-items: flex-start;
-            flex: 1;
+        .family-content h2 {
+            margin-bottom: 1rem;
+            font-size: clamp(2rem, 4vw, 3rem);
+            font-weight: 900;
+            line-height: 1.15;
+        }
+
+        .family-intro {
+            max-width: 700px;
+            margin: 0 auto 3rem;
+            font-size: 1.1rem;
+            line-height: 1.8;
         }
 
         .family-values {
-            gap: 1.5rem;
-            flex: 1;
+            display: grid;
+            grid-template-columns: repeat(2, minmax(0, 1fr));
+            gap: 2rem 3rem;
+            margin: 0;
+            text-align: left;
         }
 
-        .value-item {
-            margin-bottom: 0;
+        .family-values .value-item {
+            padding-left: 1.25rem;
+            border-left: 3px solid #82c142;
         }
 
-        .value-item h4 {
-            font-size: 1rem;
+        .family-values .value-item h3 {
             margin-bottom: 0.5rem;
+            font-size: 1.2rem;
+            color: #fff;
         }
 
-        .best-of-wrapper {
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            min-width: 140px;
-        }
-
-        .best-of-logo {
-            max-width: 100px;
-            width: 100%;
-            height: auto;
-            filter: drop-shadow(0 8px 16px rgba(111, 54, 131, 0.15));
+        .family-values .value-item p {
+            font-size: 1rem;
+            line-height: 1.7;
+            color: rgba(255, 255, 255, 0.95);
         }
 
         @media (max-width: 768px) {
-            .family-box h2 {
-                white-space: normal;
-                font-size: 1.5rem;
+            .family-section {
+                padding: 4.5rem 20px;
             }
 
-            .family-values-wrapper {
-                flex-direction: column;
+            .family-values {
+                grid-template-columns: 1fr;
                 gap: 1.5rem;
-            }
-
-            .best-of-wrapper {
-                justify-content: center;
-                min-width: auto;
             }
         }
     </style>
@@ -115,11 +117,10 @@
     <!-- Hero Section with Wavy Design -->
     <section id="home" class="hero">
         <div class="hero-top-wave"></div>
-        
         <div class="hero-content">
             <div class="hero-left">
-               <img src="best_of_logo.png" alt="Best of logo" class="best-of-logo">
-                <img src="5_star.png" alt="5 Star Program"> 
+                <img src="best_of_logo.png" alt="Best of logo" class="best-of-logo">
+                <img src="5_star.png" alt="5 Star Program">
                 <img src="NAEYClogo.png" alt="NAEYC logo" width="175">
                 <img src="assetshero-image.jpg.jpg" alt="Children at Beautiful Minds" class="hero-image">
             </div>
@@ -130,50 +131,35 @@
                     <p class="hero-description">Every child is safe, seen, loved, celebrated, and valued.</p>
                     <a href="#contact" class="cta-button">Schedule a Tour</a>
                 </div>
-            </div> 
+            </div>
         </div>
-
         <div class="hero-bottom-wave"></div>
     </section>
 
     <!-- Classroom Stages Section -->
-        <div class="hero-top-wave"></div>
     <section id="programs" class="classroom-stages">
         <div class="container">
             <div class="stage-intro">
-                
                 <h2>A Classroom for Every Stage</h2>
             </div>
-
             <div class="stages-grid">
                 <div class="stage-card">
-                    <div class="stage-icon">
-                        <img src= "icon thoughts.png" alt="tigers bears penguins turtles classroom icons" width="175"> 
-                    </div>
+                    <div class="stage-icon"><img src="icon thoughts.png" alt="Tigers, bears, penguins, and turtles classroom icons" width="175"></div>
                     <h3>Tiny Tigers, Baby Bears, Penguins, Turtles</h3>
                     <p>4 weeks - 2 years</p>
                 </div>
-
                 <div class="stage-card">
-                    <div class="stage-icon">
-                        <img src="icon thoughts 2.png" alt="ponies monkeys and frogs icons">
-                    </div>
+                    <div class="stage-icon"><img src="icon thoughts 2.png" alt="Ponies, monkeys, and frogs icons"></div>
                     <h3>Ponies, Monkeys, Frogs</h3>
                     <p>2 - 3 years</p>
                 </div>
-
                 <div class="stage-card">
-                    <div class="stage-icon">
-                        <img src="icon thoughts 3.png" alt="parrot icon" width="175"> 
-                    </div>
+                    <div class="stage-icon"><img src="icon thoughts 3.png" alt="Parrot icon" width="175"></div>
                     <h3>Parrots</h3>
-                    <p>4 Years & 4K Program</p>
+                    <p>4 Years &amp; 4K Program</p>
                 </div>
-
                 <div class="stage-card">
-                    <div class="stage-icon">
-                        <img src="icon thoughts 4.png" alt="School Age icon" width="175">
-                    </div>
+                    <div class="stage-icon"><img src="icon thoughts 4.png" alt="School Age icon" width="175"></div>
                     <h3>Zoo</h3>
                     <p>School Age 5 - 12 yrs</p>
                 </div>
@@ -182,44 +168,30 @@
     </section>
 
     <!-- More Than Childcare Section -->
-    
- 
-    <section class="family-section">
-        <div class="family-wave-top"></div>
-        
-            <div class="family-content">
-                    <h1>More Than Childcare </h1>
-                    <h2> A Beautiful Mind grows here!</h2>
-        </section>
-                    <div class="family-values-wrapper">
-                        <div class="family-values">
-                            <div class="value-item">
-                                <h4>Relationships First</h4>
-                                <p>Building trust and strong connections create the fundation of our center. Our families and their needs come first. </p>
-                            </div>
-
-                            <div class="value-item">
-                                <h4>Every Child is Unique</h4>
-                                <p>Honoring each child's individual strengths and developmental pace.</p>
-                            </div>
-
-                            <div class="value-item">
-                                <h4>Partners with Families</h4>
-                                <p>Collaborating with parents to create the best environment for growth.</p>
-                            </div>
-
-                            <div class="value-item">
-                                <h4>Joyful Learning</h4>
-                                <p>Play-based curriculum that sparks joy, imagination, and social awareness.</p>
-                            </div>
-                        </div>
-                        </div>
-                    </div>
+    <section id="about" class="family-section">
+        <div class="container family-content">
+            <p class="family-eyebrow">More Than Childcare</p>
+            <h2>A Beautiful Mind Grows Here</h2>
+            <p class="family-intro">We partner with families to create a place where every child feels safe, supported, and encouraged to grow.</p>
+            <div class="family-values">
+                <div class="value-item">
+                    <h3>Relationships First</h3>
+                    <p>Building trust and strong connections is the foundation of our center. Our families and their needs come first.</p>
+                </div>
+                <div class="value-item">
+                    <h3>Every Child Is Unique</h3>
+                    <p>We honor each child's individual strengths, interests, and developmental pace.</p>
+                </div>
+                <div class="value-item">
+                    <h3>Partners with Families</h3>
+                    <p>We collaborate with parents to create the best environment for every child's growth.</p>
+                </div>
+                <div class="value-item">
+                    <h3>Joyful Learning</h3>
+                    <p>Our play-based curriculum sparks joy, imagination, and social awareness.</p>
                 </div>
             </div>
         </div>
-
-        <div class="family-wave-bottom"></div>
     </section>
 
     <!-- Call to Action Sections -->
@@ -231,7 +203,6 @@
                     <p>Schedule a tour and meet our team. We'd love to show you around.</p>
                     <a href="#contact" class="cta-button primary">Schedule a Tour</a>
                 </div>
-
                 <div class="cta-card">
                     <h3>Want to Join Our Team?</h3>
                     <p>We're always looking for passionate, caring people to grow with us.</p>
@@ -240,47 +211,35 @@
             </div>
         </div>
     </section>
-<div class="hero-bottom-wave"></div>
+
+    <!-- Our Team Section -->
     <section id="team" class="staff">
-    <div class="container">
-        <h2>Meet the Staff</h2>
-        <p class="section-intro">
-            Our experienced and caring educators are the heart of Beautiful Minds.
-            Meet the dedicated team who care for and support your children.
-        </p>
-
-        <details class="staff-dropdown">
-            <summary>
-                Meet our team
-                <span class="staff-dropdown-arrow" aria-hidden="true">⌄</span>
-            </summary>
-
-            <div class="staff-dropdown-panel">
-                <div class="staff-grid">
-                    <article class="staff-card">
-                        <h3>[Staff member name]</h3>
-                        <p class="position">[Position]</p>
-                        <p class="bio">[Add a short introduction.]</p>
-                    </article>
-
-                    <!-- Copy the staff-card above for each team member. -->
+        <div class="container">
+            <h2>Meet the Staff</h2>
+            <p class="section-intro">Our experienced and caring educators are the heart of Beautiful Minds. Meet the dedicated team who care for and support your children.</p>
+            <details class="staff-dropdown">
+                <summary>
+                    Meet our team
+                    <span class="staff-dropdown-arrow" aria-hidden="true">⌄</span>
+                </summary>
+                <div class="staff-dropdown-panel">
+                    <div class="staff-grid">
+                        <article class="staff-card">
+                            <h3>[Staff member name]</h3>
+                            <p class="position">[Position]</p>
+                            <p class="bio">[Add a short introduction.]</p>
+                        </article>
+                        <!-- Copy the staff-card above for each team member. -->
+                    </div>
                 </div>
-            </div>
-        </details>
-    </div>
-</section>
-            <p class="section-intro">Our experienced and caring educators are the heart of Beautiful Minds. With strong dedicated staff members, each background-checked, licensed, and CPR certified! 
-  
-</div>
-            </p>
-        
-
+            </details>
+        </div>
+    </section>
 
     <!-- Contact Section -->
     <section id="contact" class="contact">
         <div class="container">
             <h2>Get In Touch</h2>
-            
             <div class="contact-wrapper">
                 <div class="contact-form">
                     <h3>Send us a Message</h3>
@@ -304,42 +263,24 @@
                         <button type="submit" class="btn-submit">Send Message</button>
                     </form>
                 </div>
-
                 <div class="contact-info">
                     <h3>Contact Information</h3>
-                    
                     <div class="info-item">
                         <i class="fas fa-map-marker-alt"></i>
-                        <div>
-                            <h4>Address</h4>
-                            <p>2821 Fairfax Street<br>Eau Claire, WI 54703</p>
-                        </div>
+                        <div><h4>Address</h4><p>2821 Fairfax Street<br>Eau Claire, WI 54703</p></div>
                     </div>
-
                     <div class="info-item">
                         <i class="fas fa-phone"></i>
-                        <div>
-                            <h4>Phone</h4>
-                            <p><a href="tel:+17158344360">(715) 834-4360</a></p>
-                        </div>
+                        <div><h4>Phone</h4><p><a href="tel:+17158344360">(715) 834-4360</a></p></div>
                     </div>
-
                     <div class="info-item">
                         <i class="fas fa-envelope"></i>
-                        <div>
-                            <h4>Email</h4>
-                            <p><a href="mailto:admin@bmindscc.com">admin@bmindscc.com</a></p>
-                        </div>
+                        <div><h4>Email</h4><p><a href="mailto:admin@bmindscc.com">admin@bmindscc.com</a></p></div>
                     </div>
-
                     <div class="info-item">
                         <i class="fas fa-clock"></i>
-                        <div>
-                            <h4>Hours</h4>
-                            <p>Monday - Friday: 6:30 AM - 5:30 PM<br>Saturday & Sunday: Closed</p>
-                        </div>
+                        <div><h4>Hours</h4><p>Monday - Friday: 6:30 AM - 5:30 PM<br>Saturday &amp; Sunday: Closed</p></div>
                     </div>
-
                     <div class="social-links">
                         <h4>Follow Us</h4>
                         <a href="https://www.facebook.com/bmindscc" class="social-icon" title="Facebook"><i class="fab fa-facebook"></i></a>
@@ -360,7 +301,6 @@
                         <p>Serving Eau Claire families since 2012 — where every child is seen, loved, celebrated, and valued.</p>
                     </div>
                 </div>
-
                 <div class="footer-section">
                     <h4>Quick Links</h4>
                     <ul>
@@ -370,7 +310,6 @@
                         <li><a href="#contact">Contact</a></li>
                     </ul>
                 </div>
-
                 <div class="footer-section">
                     <h4>Contact</h4>
                     <p>2821 Fairfax Street<br>Eau Claire, WI 54703</p>
@@ -378,7 +317,6 @@
                     <p><a href="mailto:admin@bmindscc.com">admin@bmindscc.com</a></p>
                 </div>
             </div>
-
             <div class="footer-bottom">
                 <p>&copy; 2012-2026 Beautiful Minds Child Care. All rights reserved.</p>
             </div>
