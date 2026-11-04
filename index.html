@@ -72,10 +72,18 @@
             color: rgba(255, 255, 255, 0.95);
         }
 
-        /* Make the classroom photo the hero focal point and group the three badges beside it. */
+        /* Keep the recognitions beside the classroom photo without card backgrounds. */
+        .hero {
+            background: linear-gradient(135deg, #eadcf0 0%, #d7edf0 55%, #e5f0d5 100%);
+        }
+
+        .hero-content {
+            grid-template-columns: minmax(0, 0.9fr) minmax(0, 1.1fr);
+        }
+
         .hero-left {
             display: grid;
-            grid-template-columns: minmax(0, 1fr) 126px;
+            grid-template-columns: 126px minmax(0, 1fr);
             align-items: stretch;
             gap: 1rem;
             width: 100%;
@@ -92,7 +100,7 @@
             max-width: none;
             height: clamp(300px, 36vw, 440px);
             object-fit: cover;
-            border: 4px solid rgba(255, 255, 255, 0.95);
+            border: 0;
             border-radius: 22px;
             box-shadow: 0 16px 36px rgba(58, 58, 58, 0.18);
         }
@@ -111,12 +119,12 @@
             justify-content: center;
             min-height: 0;
             flex: 1;
-            padding: 0.6rem;
-            background: rgba(255, 255, 255, 0.96);
-            border: 1px solid rgba(111, 54, 131, 0.08);
-            border-radius: 14px;
-            box-shadow: 0 7px 18px rgba(58, 58, 58, 0.12);
-            transition: transform 0.25s ease, box-shadow 0.25s ease;
+            padding: 0;
+            background: transparent;
+            border: 0;
+            border-radius: 0;
+            box-shadow: none;
+            transition: none;
         }
 
         .hero-badge img {
@@ -127,8 +135,12 @@
         }
 
         .hero-badge:hover {
-            transform: translateY(-3px);
-            box-shadow: 0 10px 22px rgba(58, 58, 58, 0.16);
+            transform: none;
+            box-shadow: none;
+        }
+
+        .hero-box h2 {
+            font-size: clamp(1.9rem, 3.1vw, 2.8rem);
         }
 
         @media (max-width: 768px) {
@@ -141,14 +153,22 @@
                 gap: 1.5rem;
             }
 
+            .hero-content {
+                grid-template-columns: 1fr;
+            }
+
             .hero-left {
                 max-width: 600px;
-                grid-template-columns: minmax(0, 1fr) 105px;
+                grid-template-columns: 105px minmax(0, 1fr);
                 gap: 0.8rem;
             }
 
             .hero-visual .hero-image {
                 height: clamp(280px, 55vw, 400px);
+            }
+
+            .hero-box h2 {
+                font-size: clamp(2rem, 4vw, 2.8rem);
             }
         }
 
@@ -158,21 +178,19 @@
                 gap: 0.8rem;
             }
 
-            .hero-visual .hero-image {
-                height: clamp(240px, 72vw, 340px);
-            }
-
             .hero-badges {
                 flex-direction: row;
                 justify-content: center;
                 gap: 0.55rem;
             }
 
+            .hero-visual .hero-image {
+                height: clamp(240px, 72vw, 340px);
+            }
+
             .hero-badge {
                 width: min(31%, 110px);
                 min-height: 62px;
-                padding: 0.35rem;
-                border-radius: 10px;
             }
 
             .hero-badge img {
@@ -216,18 +234,18 @@
         <div class="hero-top-wave"></div>
         <div class="hero-content">
             <div class="hero-left">
-                <div class="hero-visual">
-                    <img src="assetshero-image.jpg.jpg" alt="Children at Beautiful Minds" class="hero-image">
-                </div>
                 <div class="hero-badges" aria-label="Program and community recognitions">
                     <div class="hero-badge"><img src="NAEYClogo.png" alt="NAEYC accredited"></div>
                     <div class="hero-badge"><img src="best_of_logo.png" alt="Best of recognition"></div>
                     <div class="hero-badge"><img src="5_star.png" alt="YoungStar 5-Star Program"></div>
                 </div>
+                <div class="hero-visual">
+                    <img src="assetshero-image.jpg.jpg" alt="Children at Beautiful Minds" class="hero-image">
+                </div>
             </div>
             <div class="hero-right">
                 <div class="hero-box">
-                    <h2>A Place for All Children to Feel Included</h2>
+                    <h2>A Place Where Every Child Belongs, Feels Included, and Can Grow</h2>
                     <p class="highlight-text">Serving Eau Claire families since 2012</p>
                     <p class="hero-description">Every child is safe, seen, loved, celebrated, and valued.</p>
                     <a href="#contact" class="cta-button">Schedule a Tour</a>
